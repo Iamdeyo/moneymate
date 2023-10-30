@@ -38,7 +38,7 @@ const Login = () => {
       <p className="text-sm font-medium text-orange w-full text-end mt-6">
         Forgot Password?
       </p>
-      <Link href={"/unverifed-dashboard"} className="btn-main mt-20">
+      <Link href={"/dashboard"} className="btn-main mt-20">
         Login
       </Link>
 

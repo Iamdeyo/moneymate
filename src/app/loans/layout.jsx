@@ -1,10 +1,13 @@
+"use client";
 import BottomNav from "@/components/BottomNav";
+import { useRouter } from "next/navigation";
 import React from "react";
 
 const Layout = ({ children }) => {
+  const router = useRouter();
   return (
-    <div className="h-screen flex flex-col items-center">
-      <div className="w-full mt-5">
+    <div className="min-h-screen flex flex-col px-4 items-center mb-[90px]">
+      <div className="w-full mt-5" onClick={() => router.back()}>
         <img src="/back-outline.png" alt="back" />
       </div>
       <div className="flex flex-col gap-4 text-darkslateblue w-full mt-3">

@@ -46,7 +46,7 @@ const BorrowRequest = () => {
       </div>
 
       <Link
-        href={"/"}
+        href={"/loans/borrow-payment"}
         className="btn-main mt-16 !w-[150px] !h-[40px] !text-darkslateblue !text-sm"
       >
         Send Request

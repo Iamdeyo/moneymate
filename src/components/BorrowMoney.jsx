@@ -50,7 +50,8 @@ const BorrowMoney = () => {
       </div>
       <div className="w-full overflow-hidden overflow-y-auto h-full flex flex-col gap-5">
         {beneficiaries.map((beneficiary) => (
-          <div
+          <Link
+            href={"/loans/borrow-request"}
             className="h-[60px] flex items-center justify-between px-[12px] py-[15px] shadow-[0px_1px_4px_0px_rgba(0,_0,_0,_0.25)] text-darkslateblue flex-none"
             key={beneficiary.id}
           >
@@ -64,7 +65,7 @@ const BorrowMoney = () => {
               </div>
             </div>
             <p className="text-xs font-semibold">{beneficiary.accountNumber}</p>
-          </div>
+          </Link>
         ))}
       </div>
     </>

@@ -5,7 +5,7 @@ const BottomNav = () => {
     {
       id: 1,
       title: "Home",
-      link: "/",
+      link: "/dashboard",
       img: "/vector3.svg",
     },
     {

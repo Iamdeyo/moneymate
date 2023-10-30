@@ -67,79 +67,74 @@ const LendMoney = () => {
           <p className="text-xs font-medium">&#8358;2,050.00</p>
         </div>
       </div>
-      <div className="flex flex-col w-full overflow-hidden overflow-y-auto h-full mb-[70px]">
-        <div className="w-full text-darkslateblue flex justify-between border-b-2 flex-none border-b-orange pb-[10px] mt-[20px] mb-[10px]">
-          <p className="text-sm">Requests</p>
-          <div className="text-center">
-            <p className="text-[8px]"> Daily Percentage</p>
-            <p className="text-xs font-semibold">1%</p>
+
+      <div className="w-full text-darkslateblue flex justify-between border-b-2 flex-none border-b-orange pb-[10px] mt-[20px] mb-[10px]">
+        <p className="text-sm">Requests</p>
+        <div className="text-center">
+          <p className="text-[8px]"> Daily Percentage</p>
+          <p className="text-xs font-semibold">1%</p>
+        </div>
+      </div>
+      <div className="w-full overflow-hidden pb-4 h-full min-h-[80px] flex flex-col gap-5">
+        {beneficiaries.map((beneficiary) => (
+          <Link href={"/loans/loan-approval"} key={beneficiary.id}>
+            <div className="flex justify-between text-[10px] pb-2">
+              <p>{beneficiary.date}</p>
+              <p className="font-semibold">Duration: {beneficiary.duration}</p>
+            </div>
+            <div className="h-[60px] flex items-center justify-between px-[12px] py-[15px] shadow-[0px_1px_4px_0px_rgba(0,_0,_0,_0.25)] text-darkslateblue flex-none rounded-md">
+              <div className="flex items-center gap-[10px]">
+                <div className="p-[6px] bg-[#F0E1BB] w-fit rounded-full">
+                  <img src="/fcmb-logo-2.png" alt="fcmb" />
+                </div>
+                <div>
+                  <p className="text-sm">{beneficiary.name}</p>
+                  <p className="text-[10px] font-semibold">
+                    {beneficiary.accountNumber}
+                  </p>
+                </div>
+              </div>
+              <p className="text-xs font-semibold">
+                {" "}
+                &#8358;{beneficiary.amount}
+              </p>
+            </div>
+          </Link>
+        ))}
+      </div>
+      <div className="w-full text-darkslateblue flex justify-between border-b-2 flex-none border-b-orange pb-[10px] mt-[20px] mb-[10px]">
+        <p className="text-sm">Balance</p>
+      </div>
+      <div className="w-full overflow-hidden overflow-y-auto h-[80px] flex-none flex flex-col gap-5">
+        {balance.map((beneficiary) => (
+          <div key={beneficiary.id} className="text-darkslateblue">
+            <div className="flex justify-between text-[10px] pb-2">
+              <p>{beneficiary.date}</p>
+              <p className="font-semibold">Duration: {beneficiary.duration}</p>
+            </div>
+            <div className="h-[60px] flex items-center justify-between px-[12px] py-[15px] shadow-[0px_1px_4px_0px_rgba(0,_0,_0,_0.25)] text-darkslateblue flex-none rounded-md bg-[#F6DADA]">
+              <div className="flex items-center gap-[10px]">
+                <div className="p-[6px] bg-[#F0E1BB] w-fit rounded-full">
+                  <img src="/fcmb-logo-2.png" alt="fcmb" />
+                </div>
+                <div>
+                  <p className="text-sm">{beneficiary.name}</p>
+                  <p className="text-[10px] font-semibold">
+                    {beneficiary.accountNumber}
+                  </p>
+                </div>
+              </div>
+              <p className="text-xs font-semibold">
+                {" "}
+                &#8358;{beneficiary.amount}
+              </p>
+            </div>
           </div>
-        </div>
-        <div className="w-full overflow-hidden overflow-y-auto h-full min-h-[80px] flex flex-col gap-5">
-          {beneficiaries.map((beneficiary) => (
-            <div key={beneficiary.id}>
-              <div className="flex justify-between text-[10px] pb-2">
-                <p>{beneficiary.date}</p>
-                <p className="font-semibold">
-                  Duration: {beneficiary.duration}
-                </p>
-              </div>
-              <div className="h-[60px] flex items-center justify-between px-[12px] py-[15px] shadow-[0px_1px_4px_0px_rgba(0,_0,_0,_0.25)] text-darkslateblue flex-none rounded-md">
-                <div className="flex items-center gap-[10px]">
-                  <div className="p-[6px] bg-[#F0E1BB] w-fit rounded-full">
-                    <img src="/fcmb-logo-2.png" alt="fcmb" />
-                  </div>
-                  <div>
-                    <p className="text-sm">{beneficiary.name}</p>
-                    <p className="text-[10px] font-semibold">
-                      {beneficiary.accountNumber}
-                    </p>
-                  </div>
-                </div>
-                <p className="text-xs font-semibold">
-                  {" "}
-                  &#8358;{beneficiary.amount}
-                </p>
-              </div>
-            </div>
-          ))}
-        </div>
-        <div className="w-full text-darkslateblue flex justify-between border-b-2 flex-none border-b-orange pb-[10px] mt-[20px] mb-[10px]">
-          <p className="text-sm">Balance</p>
-        </div>
-        <div className="w-full overflow-hidden overflow-y-auto h-[80px] flex-none flex flex-col gap-5">
-          {balance.map((beneficiary) => (
-            <div key={beneficiary.id} className="text-darkslateblue">
-              <div className="flex justify-between text-[10px] pb-2">
-                <p>{beneficiary.date}</p>
-                <p className="font-semibold">
-                  Duration: {beneficiary.duration}
-                </p>
-              </div>
-              <div className="h-[60px] flex items-center justify-between px-[12px] py-[15px] shadow-[0px_1px_4px_0px_rgba(0,_0,_0,_0.25)] text-darkslateblue flex-none rounded-md bg-[#F6DADA]">
-                <div className="flex items-center gap-[10px]">
-                  <div className="p-[6px] bg-[#F0E1BB] w-fit rounded-full">
-                    <img src="/fcmb-logo-2.png" alt="fcmb" />
-                  </div>
-                  <div>
-                    <p className="text-sm">{beneficiary.name}</p>
-                    <p className="text-[10px] font-semibold">
-                      {beneficiary.accountNumber}
-                    </p>
-                  </div>
-                </div>
-                <p className="text-xs font-semibold">
-                  {" "}
-                  &#8358;{beneficiary.amount}
-                </p>
-              </div>
-            </div>
-          ))}
-        </div>
-        <div className="flex justify-between items-center font-semibold text-xs mt-2 py-2">
-          <p>Payment due send reminder</p>
-          <img src="/bell-outline.svg" alt="notify" />
-        </div>
+        ))}
+      </div>
+      <div className="flex w-full justify-between items-center font-semibold text-xs mt-2 py-2">
+        <p>Payment due send reminder</p>
+        <img src="/bell-outline.svg" alt="notify" />
       </div>
     </>
   );
