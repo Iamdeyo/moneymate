@@ -8,14 +8,14 @@ const DashboardUnPage = () => {
       title: "Verify your email address",
       desc: "Verify emails to ensure seamless banking services.",
       img: "/email.png",
-      link: "/verify-email",
+      link: "/email",
     },
     {
       id: 2,
       title: "Link your BVN",
       desc: "Kindly link your BVN (bank Verification Number) for enhanced security and seamless banking experience.",
       img: "/house.png",
-      link: "/verify-bvn",
+      link: "/bvn",
     },
     {
       id: 3,
@@ -48,7 +48,7 @@ const DashboardUnPage = () => {
       <div className="bg-darkslateblue w-full relative h-[144px] flex-none overflow-hidden rounded-[9px] flex items-center justify-between text-white px-5">
         <div>
           <p className="text-xs">Available Balance</p>
-          <p className="text-2xl font-medium">N28,789.90</p>
+          <p className="text-2xl font-medium">&#8358;0.00</p>
           <div className="flex gap-6 mt-6">
             <button className=" w-[74px] h-[28px] rounded-md border border-white flex items-center justify-center gap-2 text-[10px]">
               Send{" "}

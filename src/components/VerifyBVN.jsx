@@ -2,7 +2,7 @@ import Link from "next/link";
 
 const VerifyBVN = () => {
   return (
-    <div>
+    <div className="px-4">
       <div className="text-center mt-20">
         <p className="text-[24px] font-semibold">Enter your BVN</p>
         <p className="text-[10px] font-normal pt-8">
@@ -16,7 +16,7 @@ const VerifyBVN = () => {
           placeholder="Enter your BVN"
         />
       </div>
-      <Link href={"/"} className="btn-main mt-64">
+      <Link href={"/dashboard"} className="btn-main mt-64">
         Submit
       </Link>
     </div>

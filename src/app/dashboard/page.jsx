@@ -15,14 +15,14 @@ const Dashboard = () => {
       title: "Utilities",
       desc: "pay bills easily.",
       img: "/bill.png",
-      link: "/",
+      link: "#",
     },
     {
       id: 3,
       title: "Recharge and Data",
       desc: "Affordable data for you at the comfort of your home.",
       img: "/global.png",
-      link: "/",
+      link: "#",
     },
   ];
   return (

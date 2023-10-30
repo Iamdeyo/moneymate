@@ -11,14 +11,6 @@ const GetStarted = () => {
       <Link href={"/signup"} className="btn-main mt-40">
         Let’s get started
       </Link>
-      <div className="flex items-center justify-end w-full absolute bottom-20 left-0 px-4">
-        <Link
-          href={"/signup"}
-          className="w-[101px] justify-center items-center text-center font-bold flex h-[55px] p-2 bg-orange text-gray-100 rounded-[10px]"
-        >
-          Skip
-        </Link>
-      </div>
     </div>
   );
 };

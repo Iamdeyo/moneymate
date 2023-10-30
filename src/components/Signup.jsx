@@ -69,7 +69,7 @@ const Signup = () => {
           </span>
         </div>
       </div>
-      <Link href={"/unverifed-dashboard"} className="btn-main mt-32">
+      <Link href={"/unverified-dashboard"} className="btn-main mt-32">
         Sign Up
       </Link>
     </div>

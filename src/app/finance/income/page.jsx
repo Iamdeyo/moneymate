@@ -51,13 +51,13 @@ const Income = () => {
         </div>
         <div className="text-center">
           <p className="text-xs ">Total Income</p>
-          <p className="text-2xl text-orange">N28,789.90</p>
+          <p className="text-2xl text-orange">&#8358;28,789.90</p>
         </div>
       </div>
       <div className="shadow-[0px_1px_4px_0px_rgba(0,_0,_0,_0.25)] w-full aspect-square rounded-3xl p-4 flex flex-col items-center max-w-sm">
         <div className="my-auto relative">
           <p className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 text-[20px] font-medium">
-            N28,789.90
+            &#8358;28,789.90
           </p>
           <img src="/chart.svg" alt="chart" />
         </div>

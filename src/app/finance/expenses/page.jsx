@@ -50,36 +50,36 @@ const Expenses = () => {
           </svg>
         </div>
         <div className="text-center">
-          <p className="text-xs ">Total Income</p>
-          <p className="text-2xl text-orange">N28,789.90</p>
+          <p className="text-xs ">Total expense</p>
+          <p className="text-2xl text-darkslateblue"> &#8358;12,520.90</p>
         </div>
       </div>
       <div className="shadow-[0px_1px_4px_0px_rgba(0,_0,_0,_0.25)] w-full aspect-square rounded-3xl p-4 flex flex-col items-center max-w-sm">
         <div className="my-auto relative">
           <p className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 text-[20px] font-medium">
-            N28,789.90
+            &#8358;12,520.90
           </p>
           <img src="/chart.svg" alt="chart" />
         </div>
         <div className="grid grid-cols-2 grid-rows-2 gap-4 w-full max-w-[200px]">
           <div className="flex gap-[10px]">
             <span className="inline-block w-[9px] h-[9px] bg-darkslateblue rounded-full"></span>
-            <p className="text-[8px]"> Week 1 </p>{" "}
+            <p className="text-[8px]"> Loans </p>{" "}
             <span className="text-[10px] font-semibold">10%</span>
           </div>
           <div className="flex gap-[10px]">
             <span className="inline-block w-[9px] h-[9px] bg-green-500 rounded-full"></span>
-            <p className="text-[8px]"> Week 3 </p>{" "}
+            <p className="text-[8px]"> Utility </p>{" "}
             <span className="text-[10px] font-semibold">12%</span>
           </div>
           <div className="flex gap-[10px]">
             <span className="inline-block w-[9px] h-[9px] bg-orange rounded-full"></span>
-            <p className="text-[8px]"> Week 2 </p>{" "}
+            <p className="text-[8px]"> Clothes </p>{" "}
             <span className="text-[10px] font-semibold">21%</span>
           </div>
           <div className="flex gap-[10px]">
             <span className="inline-block w-[9px] h-[9px] bg-blue-600 rounded-full"></span>
-            <p className="text-[8px]"> Week 4 </p>{" "}
+            <p className="text-[8px]"> Food </p>{" "}
             <span className="text-[10px] font-semibold">9%</span>
           </div>
         </div>
