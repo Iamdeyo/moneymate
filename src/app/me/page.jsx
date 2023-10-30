@@ -17,13 +17,17 @@ const Me = () => {
           <img src="/bell.svg" alt="notify" />
         </div>
       </div>
+      <div>
+        <img src="/profile.png" alt="back" />
+        <p className='font-medium text-center mt-2 text-darkslateblue'> James</p>
+      </div>
       <div className="w-full flex flex-col gap-10 mt-8">
         <Link
           href={"/kyc"}
           className="flex justify-between items-center pb-4 border-b-2 border-b-orange"
         >
           <div>
-            <p className="font-semibold">KYC Verification</p>
+            <p className="font-semibold text-darkslateblue">KYC Verification</p>
             <p className="text-xs">Choose your means of verification.</p>
           </div>
           <svg
@@ -47,7 +51,7 @@ const Me = () => {
           className="flex justify-between items-center pb-4 border-b-2 border-b-orange"
         >
           <div>
-            <p className="font-semibold">Dispute</p>
+            <p className="font-semibold text-darkslateblue">Dispute</p>
             <p className="text-xs">Reslove issues quickly. </p>
           </div>
           <svg

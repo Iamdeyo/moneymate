@@ -70,8 +70,8 @@ const Transactions = () => {
 
       <div className="w-full overflow-hidden overflow-y-auto h-full flex flex-col gap-5 pb-6 mt-6">
         {items.map((item) => (
-          <Link
-            href={"/loans/borrow-request"}
+          <div
+
             className="h-[60px] flex items-center px-[12px]  py-[15px] shadow-[0px_1px_4px_0px_rgba(0,_0,_0,_0.25)] gap-[10%] text-darkslateblue flex-none"
             key={item.id}
           >
@@ -89,14 +89,13 @@ const Transactions = () => {
             <div className="text-start w-[20%] ">
               <p className="text-sm font-medium"> &#8358;{item.amount}</p>
               <p
-                className={`text-[10px] font-semibold ${
-                  item.status == "successful" ? "" : "text-red-500"
-                }`}
+                className={`text-[10px] font-semibold ${item.status == "successful" ? "" : "text-red-500"
+                  }`}
               >
                 {item.status}
               </p>
             </div>
-          </Link>
+          </div>
         ))}
       </div>
 
