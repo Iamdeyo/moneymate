@@ -11,19 +11,19 @@ const BottomNav = () => {
     {
       id: 2,
       title: "Finance",
-      link: "/",
+      link: "/finance/income",
       img: "/vector2.svg",
     },
     {
       id: 3,
       title: "Transactions",
-      link: "/",
+      link: "/transactions",
       img: "/group.svg",
     },
     {
       id: 4,
       title: "Me",
-      link: "/",
+      link: "/me",
       img: "/vector4.svg",
     },
   ];

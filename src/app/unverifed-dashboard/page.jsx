@@ -8,21 +8,21 @@ const DashboardUnPage = () => {
       title: "Verify your email address",
       desc: "Verify emails to ensure seamless banking services.",
       img: "/email.png",
-      link: "/",
+      link: "/verify-email",
     },
     {
       id: 2,
       title: "Link your BVN",
       desc: "Kindly link your BVN (bank Verification Number) for enhanced security and seamless banking experience.",
       img: "/house.png",
-      link: "/",
+      link: "/verify-bvn",
     },
     {
       id: 3,
       title: "Setup a security pin",
       desc: " Your security pin is a confidential code. please do not share it with anyone for your safety and security.",
       img: "/padlock.png",
-      link: "/",
+      link: "/me",
     },
   ];
   return (

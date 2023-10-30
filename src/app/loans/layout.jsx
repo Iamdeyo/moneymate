@@ -1,7 +1,6 @@
 "use client";
 import BottomNav from "@/components/BottomNav";
 import { useRouter } from "next/navigation";
-import React from "react";
 
 const Layout = ({ children }) => {
   const router = useRouter();

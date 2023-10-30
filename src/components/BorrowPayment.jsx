@@ -51,6 +51,12 @@ const BorrowPayment = () => {
           You owe Courage Charly <strong>&#8358;2,050.00</strong>
         </p>
       </div>
+      <Link
+        href={"/loans"}
+        className="btn-main mt-16 !w-[150px] !h-[40px] !text-darkslateblue !text-sm"
+      >
+        Send Payment
+      </Link>
     </>
   );
 };

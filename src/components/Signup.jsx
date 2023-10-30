@@ -6,7 +6,7 @@ import { useState } from "react";
 const Signup = () => {
   const [hide, setHide] = useState(true);
   return (
-    <div className="flex flex-col min-h-screen px-4 bg-darkslateblue items-center text-white">
+    <div className="flex flex-col min-h-screen px-4 bg-darkslateblue pb-10 items-center text-white">
       <div className="mt-20">
         <p className="text-2xl font-bold">CREATE AN ACCOUNT</p>
         <p className="mt-4">Already have an account? sign in</p>
@@ -69,7 +69,7 @@ const Signup = () => {
           </span>
         </div>
       </div>
-      <Link href={"/login"} className="btn-main mt-32">
+      <Link href={"/unverifed-dashboard"} className="btn-main mt-32">
         Sign Up
       </Link>
     </div>
