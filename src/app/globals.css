@@ -10,3 +10,10 @@ body {
 ::after {
   border-width: 0;
 }
+.btn-main{
+  @apply w-full justify-center items-center text-center font-bold flex h-[51px] p-2 bg-orange text-gray-100 rounded-[100px]
+}
+
+::-webkit-scrollbar{
+  display: none;
+}

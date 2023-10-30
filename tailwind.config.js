@@ -32,19 +32,6 @@ module.exports = {
         inter: "Inter",
       },
     },
-    borderRadius: {
-      "81xl": "100px",
-      "8xs": "5px",
-    },
-    fontSize: {
-      inherit: "inherit",
-      xs: "0.75rem",
-      sm: "0.88rem",
-      "5xs": "0.5rem",
-      "4xs": "0.56rem",
-      base: "1rem",
-      "3xs": "0.63rem",
-    },
   },
   plugins: [],
 };
